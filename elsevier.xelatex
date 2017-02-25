@@ -12,7 +12,9 @@
 
 $for(author)$
 \author[$author.group$]{$author.name$}
+$if(author.email)$
 \ead{$author.email$}
+$endif$
 $endfor$
 
 \cortext[cor1]{Corresponding author}
